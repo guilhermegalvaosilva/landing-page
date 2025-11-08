@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Produto X — Torne sua ideia realidade</title>
+    <meta
+      name="description"
+      content="Landing page moderna e responsiva em HTML, CSS e JS puro. Inclui hero, features, preços, depoimentos e formulário de contacto."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="indec.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <strong>Produto X</strong>
+          </div>
+          <div class="nav-links" role="navigation" aria-label="Primário">
+            <a href="#features">Funcionalidades</a>
+            <a href="#precos">Preços</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacto">Contacto</a>
+            <button
+              class="btn btn-ghost"
+              id="modeToggle"
+              aria-label="Alternar tema"
+            >
+              🌗
+            </button>
+            <a class="btn btn-primary" href="#contacto">Começar</a>
+          </div>
+          <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+          <a href="#features">Funcionalidades</a>
+          <a href="#precos">Preços</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="pill">🚀 Novo • Agora com IA integrada</div>
+        <h1>
+          Transforme ideias em produtos
+          <span
+            style="
+              background: linear-gradient(135deg, #fff, #a8b3cf);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+            "
+            >em minutos</span
+          >.
+        </h1>
+        <p>
+          Uma landing page moderna, rápida e responsiva para captar leads,
+          validar propostas e vender sem dor de cabeça.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#precos">Ver preços</a>
+          <a class="btn btn-ghost" href="#features">Explorar recursos</a>
+        </div>
+        <div class="preview reveal" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop"
+            alt="Mockup do produto"
+          />
+        </div>
+      </section>
+
+      <section id="features" class="container">
+        <div class="section-head">
+          <h2>Funcionalidades que convertem</h2>
+          <span class="tag">Sem frameworks • JS puro</span>
+        </div>
+        <div class="grid features">
+          <article class="card reveal">
+            <h3>Captação de Leads</h3>
+            <p class="label">Formulário com validação e envio.</p>
+          </article>
+          <article class="card reveal">
+            <h3>SEO e Performance</h3>
+            <p class="label">
+              Estrutura semântica, meta tags e assets otimizados.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Design Responsivo</h3>
+            <p class="label">Perfeito no telemóvel, tablet e desktop.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Dark/Light Mode</h3>
+            <p class="label">Alternância de tema com persistência.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Animações Suaves</h3>
+            <p class="label">Revelação on-scroll com IntersectionObserver.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Componentes Reutilizáveis</h3>
+            <p class="label">Cartões, acordeão, pricing e mais.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="precos" class="container">
+        <div class="section-head">
+          <h2>Planos e Preços</h2>
+          <span class="tag">Sem taxas escondidas</span>
+        </div>
+        <div class="grid pricing">
+          <div class="price-card reveal">
+            <h3>Starter</h3>
+            <p class="price">€0<span class="tag"> / mês</span></p>
+            <ul class="features-list">
+              <li>✅ 1 página</li>
+              <li>✅ Formulário básico</li>
+              <li>✅ Suporte comunitário</li>
+            </ul>
+            <button class="btn btn-ghost">Começar grátis</button>
+          </div>
+          <div
+            class="price-card reveal"
+            style="
+              border-color: rgba(124, 92, 255, 0.6);
+              box-shadow: 0 10px 40px -16px var(--ring);
+            "
+          >
+            <h3>Pro</h3>
+            <p class="price">€19<span class="tag"> / mês</span></p>
+            <ul class="features-list">
+              <li>✅ 5 páginas</li>
+              <li>✅ Formulário avançado</li>
+              <li>✅ Integrações (Zapier/Webhook)</li>
+            </ul>
+            <button class="btn btn-primary">Assinar Pro</button>
+          </div>
+          <div class="price-card reveal">
+            <h3>Business</h3>
+            <p class="price">€49<span class="tag"> / mês</span></p>
+            <ul class="features-list">
+              <li>✅ Páginas ilimitadas</li>
+              <li>✅ A/B testing</li>
+              <li>✅ Suporte prioritário</li>
+            </ul>
+            <button class="btn btn-ghost">Falar com vendas</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="container">
+        <div class="section-head">
+          <h2>Perguntas Frequentes</h2>
+          <span class="tag">Transparência total</span>
+        </div>
+        <div class="accordion reveal">
+          <details>
+            <summary>
+              Posso usar o template comercialmente? <span>+</span>
+            </summary>
+            <p>Sim. É um boilerplate base que podes personalizar à vontade.</p>
+          </details>
+          <details>
+            <summary>Como faço o deploy? <span>+</span></summary>
+            <p>
+              Podes enviar para GitHub Pages, Netlify, Vercel ou teu próprio
+              servidor.
+            </p>
+          </details>
+          <details>
+            <summary>É fácil editar estilos? <span>+</span></summary>
+            <p>Sim. Variáveis CSS no topo (cores, sombras e espaçamentos).</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contacto" class="container">
+        <div class="section-head">
+          <h2>Vamos conversar</h2>
+          <span class="tag">Resposta em até 24h úteis</span>
+        </div>
+        <form
+          action="https://formsubmit.co/gui.galvaosimplicio@gmail.com"
+          method="POST"
+        >
+          <div class="form-row">
+            <label>
+              <span>Nome</span>
+              <input type="text" name="nome" placeholder="Seu nome" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input
+                type="email"
+                name="email"
+                placeholder="voce@email.com"
+                required
+              />
+            </label>
+          </div>
+          <label>
+            <span>Mensagem</span>
+            <textarea
+              name="mensagem"
+              rows="4"
+              placeholder="Como podemos ajudar?"
+              required
+            ></textarea>
+          </label>
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Novo contato da landing page!"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://teu-site-ou-obrigado.html"
+          />
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+          "
+        >
+          <small
+            >© <span id="year"></span> Produto X. Todos os direitos
+            reservados.</small
+          >
+          <div style="display: flex; gap: 1rem">
+            <a href="#">Termos</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Suporte</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
